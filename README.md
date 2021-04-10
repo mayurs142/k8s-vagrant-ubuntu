@@ -2,6 +2,24 @@
 
 Vagrant script for setting up a 3-node kubernetes cluster using kubeadm on ubuntu nodes
 
+## prerequisities
+
+1. [VirtualBox][1]
+2. [Vagrant][2]
+
+## how to use
+
+```bash
+# clone the repo
+git clone https://github.com/mayurs142/vagrant-k8s-cluster.git
+
+# change directory
+cd vagrant-k8s-cluster
+
+# vagrant up
+vagrant up
+```
+
 ## managing multiple kubeconfig and contexts
 
 ```bash
@@ -20,3 +38,6 @@ kubectl config use kubernetes-admin@kubernetes
 # Delete contexts from kubeconfig
 kubectl config delete-context kubernetes-admin@kubernetes
 ```
+
+[1]: https://www.virtualbox.org/wiki/Downloads
+[2]: https://www.vagrantup.com/downloads
